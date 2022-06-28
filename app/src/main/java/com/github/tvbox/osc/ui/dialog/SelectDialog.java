@@ -21,6 +21,11 @@ public class SelectDialog<T> extends BaseDialog {
         setContentView(R.layout.dialog_select);
     }
 
+    public SelectDialog(@NonNull @NotNull Context context, int resId) {
+        super(context);
+        setContentView(resId);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
